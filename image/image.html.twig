@@ -2,6 +2,18 @@
 
 {% block particle %}
     <div class="ai-image">
-        {% if particle.image %}<img src="{{ url(particle.image) }}" alt="{{ particle.alt|e }}" />{% endif %}
+        {% for item in particle.items %}
+        
+            {% set image = url(item.image) %}
+            {% set link = item.link|e %}
+            {% set target = item.target %}
+            
+            {% if image and link %}
+                <a href="{{ link }}" target="{{ target }}"><img class="ai-image-img" src="{{ image }}" alt="{{ item.title }}" /></a>
+            {% elseif image %}
+                <img class="ai-image-img" src="{{ image }}" alt="{{ item.title }}" />
+            {% endif %}
+            
+        {% endfor %}
     </div>
 {% endblock %}
