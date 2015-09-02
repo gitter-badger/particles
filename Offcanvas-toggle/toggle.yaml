@@ -1,9 +1,7 @@
-/**
- * @author Adrian Ionescu, adi8i
- * http://www.adriandev.com/
- * https://github.com/adi8i
- */
- 
+# @author Adrian Ionescu, adi8i
+# http://www.adriandev.com/
+# https://github.com/adi8i
+
 name: Toggle
 description: Offcanvas Toggle.
 type: particle
