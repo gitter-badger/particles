@@ -11,3 +11,5 @@ Particles are small block of data used on the front end. It can be compared with
 ## Installing a Particle
 
 Upload both `.html.twig` and `.yaml` files in `templates/g5_hydrogen/custom/particles/`
+
+Video Tutorial: https://www.youtube.com/watch?v=Cj50U50HMgs&feature=youtu.be
