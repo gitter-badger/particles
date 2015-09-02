@@ -1,0 +1,12 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+<style>
+    .g-offcanvas-toggle {
+        display: none;
+    }
+</style>
+    <div class="ai-toggle" data-offcanvas-toggle>
+        <i class="{{ particle.icon }} ai-toggle-color"></i>
+    </div>
+{% endblock %}
