@@ -1,5 +1,5 @@
 name: Image
-description: Displays a simple image
+description: Display an image.
 type: particle
 
 form:
@@ -7,13 +7,29 @@ form:
     enabled:
       type: input.checkbox
       label: Enabled
-      description: Globally enable the particle.
+      description: Globally enable logo particles.
       default: true
-     
-    image:
-      type: input.imagepicker
-      label: Image
+    
+    items:
+      type: collection.list
+      label: Items
+      array: true
+      ajax: true
+      value: title
       
-    alt: 
-      type: input.text
-      label: Alt text
+      fields:
+        .image:
+          type: input.imagepicker
+          label: Image
+          
+        .link:
+          type: input.text
+          label: Link
+        
+        .target:
+          type: select.selectize
+          label: Link Target
+          default: _self
+          options:
+            _blank: New Window
+            _self: Self
