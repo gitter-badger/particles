@@ -1,0 +1,15 @@
+name: Toggle
+description: Offcanvas Toggle.
+type: particle
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally
+      
+    icon:
+      type: input.icon
+      label: Icon
+      default: fa fa-bars fa-fw fa-lg
